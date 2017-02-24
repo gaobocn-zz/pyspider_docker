@@ -6,3 +6,4 @@ else
     docker ps -a -q | xargs --no-run-if-empty docker stop
     docker ps -a -q | xargs --no-run-if-empty docker rm
 fi
+docker-compose -f /root/pyspider_docker/pyspider_worker/docker-compose.yml up -d
